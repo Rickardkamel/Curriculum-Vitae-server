@@ -3,7 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Curriculum-Vitae-server", "Curriculum-Vitae-server\Curriculum-Vitae-server.csproj", "{D8B1C2F0-8306-45FA-8A4F-7FED94392F9C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApi", "Curriculum-Vitae-server\WebApi.csproj", "{D8B1C2F0-8306-45FA-8A4F-7FED94392F9C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mappers", "Mappers\Mappers.csproj", "{AF0F0A33-56FE-4A30-9D3E-F272A3357108}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BusinessLogic", "BusinessLogic\BusinessLogic.csproj", "{035D351F-73D3-4BDA-BB72-922E928CF376}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataService", "DataService\DataService.csproj", "{423F03B6-02C4-40CA-B955-2903AB4FBC00}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Models", "Models\Models.csproj", "{84D97524-4FCA-455F-8981-5AFF572707D3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Contracts", "Contracts\Contracts.csproj", "{904F89F6-6635-4A64-9FFD-35A69BB7B2D5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +25,26 @@ Global
 		{D8B1C2F0-8306-45FA-8A4F-7FED94392F9C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D8B1C2F0-8306-45FA-8A4F-7FED94392F9C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D8B1C2F0-8306-45FA-8A4F-7FED94392F9C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AF0F0A33-56FE-4A30-9D3E-F272A3357108}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AF0F0A33-56FE-4A30-9D3E-F272A3357108}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AF0F0A33-56FE-4A30-9D3E-F272A3357108}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AF0F0A33-56FE-4A30-9D3E-F272A3357108}.Release|Any CPU.Build.0 = Release|Any CPU
+		{035D351F-73D3-4BDA-BB72-922E928CF376}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{035D351F-73D3-4BDA-BB72-922E928CF376}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{035D351F-73D3-4BDA-BB72-922E928CF376}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{035D351F-73D3-4BDA-BB72-922E928CF376}.Release|Any CPU.Build.0 = Release|Any CPU
+		{423F03B6-02C4-40CA-B955-2903AB4FBC00}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{423F03B6-02C4-40CA-B955-2903AB4FBC00}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{423F03B6-02C4-40CA-B955-2903AB4FBC00}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{423F03B6-02C4-40CA-B955-2903AB4FBC00}.Release|Any CPU.Build.0 = Release|Any CPU
+		{84D97524-4FCA-455F-8981-5AFF572707D3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{84D97524-4FCA-455F-8981-5AFF572707D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{84D97524-4FCA-455F-8981-5AFF572707D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{84D97524-4FCA-455F-8981-5AFF572707D3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{904F89F6-6635-4A64-9FFD-35A69BB7B2D5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{904F89F6-6635-4A64-9FFD-35A69BB7B2D5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{904F89F6-6635-4A64-9FFD-35A69BB7B2D5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{904F89F6-6635-4A64-9FFD-35A69BB7B2D5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
