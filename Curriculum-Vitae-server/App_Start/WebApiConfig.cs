@@ -11,7 +11,7 @@ namespace Curriculum_Vitae_server
     {
         public static void Configure(IAppBuilder app)
         {
-            HttpConfiguration config = new HttpConfiguration();
+            var config = new HttpConfiguration();
 
             // Web API routes
             config.MapHttpAttributeRoutes();
