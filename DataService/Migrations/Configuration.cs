@@ -14,6 +14,7 @@ namespace DataService.Migrations
 
         protected override void Seed(DataService.DataContext context)
         {
+
             //  This method will be called after migrating to the latest version.
 
             //  You can use the DbSet<T>.AddOrUpdate() helper extension method 
