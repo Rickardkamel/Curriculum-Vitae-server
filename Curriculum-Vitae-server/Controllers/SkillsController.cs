@@ -1,33 +1,42 @@
-﻿using System;
+﻿using System.Collections;
 using System.Collections.Generic;
-using System.Linq;
-using System.Net;
-using System.Net.Http;
 using System.Web.Http;
+using BusinessLogic.Handlers;
+using DataService;
+using Contracts;
 
 namespace Curriculum_Vitae_server.Controllers
 {
     public class SkillsController : ApiController
     {
-        //public class DataContext : DbContext
-        //{
-        //    public DataContext() : base("RickardKamel")
-        //    {
+        private readonly SkillHandler _skillHandler;
 
-        //    }
+        public SkillsController()
+        {
+            _skillHandler = new SkillHandler(new DataContext());
+        }
 
-        //    public DbSet<About> About { get; set; }
-        //    public DbSet<Project> Projects { get; set; }
-        //    public DbSet<Resume> Resumes { get; set; }
-        //    public DbSet<TimeStamp> Timestamps { get; set; }
-        //    public DbSet<Skill> Skills { get; set; }
+        public IEnumerable<SkillContract> Get()
+        {
+            return _skillHandler.Get();
+        }
 
-        //    protected override void OnModelCreating(DbModelBuilder modelBuilder)
-        //    {
+        public IHttpActionResult Get(int id)
+        {
+            var skill = _skillHandler.Get(id);
+            return skill == null ? (IHttpActionResult) NotFound() : Ok(skill);
+        }
 
-        //        base.OnModelCreating(modelBuilder);
-        //    }
+        public IHttpActionResult Post(SkillContract skillContract)
+        {
+            _skillHandler.Post(skillContract);
+            return Ok();
+        }
 
-        //}
+        public IHttpActionResult Delete(int id)
+        {
+            _skillHandler.Delete(id);
+            return Ok();
+        }
     }
 }
