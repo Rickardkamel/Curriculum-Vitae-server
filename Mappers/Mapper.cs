@@ -41,7 +41,8 @@ namespace Mappers
             {
                 Id = project.Id,
                 Text = project.Text,
-                Title = project.Title
+                Title = project.Title,
+                GitLink = project.GitLink
             };
         }
 
@@ -102,7 +103,8 @@ namespace Mappers
             {
                 Id = x.Id,
                 Text = x.Text,
-                Title = x.Title
+                Title = x.Title,
+                GitLink = x.GitLink
             });
         }
 
@@ -169,7 +171,8 @@ namespace Mappers
             {
                 Id = projectContract.Id,
                 Text = projectContract.Text,
-                Title = projectContract.Title
+                Title = projectContract.Title,
+                GitLink = projectContract.GitLink
             };
         }
 
@@ -231,7 +234,8 @@ namespace Mappers
             {
                 Id = x.Id,
                 Text = x.Text,
-                Title = x.Title
+                Title = x.Title,
+                GitLink = x.GitLink
             });
         }
 
