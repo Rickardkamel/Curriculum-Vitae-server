@@ -95,20 +95,37 @@ namespace DataService.Migrations
 
             var skills = new List<Skill>
             {
-                new Skill {Id = 1, Name = "C#", Percentage = 81},
-                new Skill {Id = 2, Name = "MVC", Percentage = 70},
-                new Skill {Id = 3, Name = "Web Api", Percentage = 80},
-                new Skill {Id = 4, Name = "TypeScript", Percentage = 80},
+                new Skill {Id = 1, Name = "C#", Percentage = 80},
+                new Skill {Id = 2, Name = "MVC", Percentage = 58},
+                new Skill {Id = 3, Name = "Web Api", Percentage = 70},
+                new Skill {Id = 4, Name = "TypeScript", Percentage = 65},
                 new Skill {Id = 5, Name = "JavaScript", Percentage = 72},
-                new Skill {Id = 6, Name = "AngularJS", Percentage = 80},
-                new Skill {Id = 7, Name = "Angular2", Percentage = 80},
-                new Skill {Id = 8, Name = "SQL", Percentage = 80},
-                new Skill {Id = 9, Name = "Ionic", Percentage = 80},
-                new Skill {Id = 10, Name = "HTML & CSS", Percentage = 80},
+                new Skill {Id = 6, Name = "AngularJS", Percentage = 65},
+                new Skill {Id = 7, Name = "Angular2", Percentage = 70},
+                new Skill {Id = 8, Name = "SQL", Percentage = 65},
+                new Skill {Id = 9, Name = "Ionic", Percentage = 67},
+                new Skill {Id = 10, Name = "HTML & CSS", Percentage = 75},
                 new Skill {Id = 11, Name = "Entity Framework", Percentage = 80},
-                new Skill {Id = 12, Name = "Azure", Percentage = 80},
-                new Skill {Id = 13, Name = "Active Directory", Percentage = 80},
-                new Skill {Id = 14, Name = "Electron", Percentage = 80},
+                new Skill {Id = 12, Name = "Azure", Percentage = 35},
+                new Skill {Id = 13, Name = "Active Directory", Percentage = 30},
+                new Skill {Id = 14, Name = "Electron", Percentage = 25},
+            };
+
+            var projects = new List<Project>
+            {
+                new Project
+                {
+                    Id = 1,
+                    Title = "Document Management",
+                    GitLink = "soonToBe",
+                    Text = "Web application for a customer during my employement at IT-Mastaren. " +
+                           "The plan was to digitize their document creation and give them an easy way to manage their documents. "
+                },
+                new Project
+                {
+                    Id = 2,
+                    Title = "Employee App"
+                }
             };
 
             skills.ForEach(x => context.Skills.Add(x));
