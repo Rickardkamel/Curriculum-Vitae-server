@@ -61,7 +61,8 @@ namespace Mappers
             return new TimeStampContract
             {
                 Id = timeStamp.Id,
-                Date = timeStamp.Date,
+                FromDate = timeStamp.FromDate,
+                ToDate = timeStamp.ToDate,
                 Text = timeStamp.Text,
                 Title = timeStamp.Title,
                 ResumeId = timeStamp.ResumeId,
@@ -123,7 +124,8 @@ namespace Mappers
             return timeStamps.ConvertAll(x => new TimeStampContract
             {
                 Id = x.Id,
-                Date = x.Date,
+                FromDate = x.FromDate,
+                ToDate = x.ToDate,
                 Text = x.Text,
                 Title = x.Title,
                 ResumeId = x.ResumeId,
@@ -191,7 +193,8 @@ namespace Mappers
             return new TimeStamp
             {
                 Id = timeStampContract.Id,
-                Date = timeStampContract.Date,
+                FromDate = timeStampContract.FromDate,
+                ToDate = timeStampContract.ToDate,
                 Text = timeStampContract.Text,
                 Title = timeStampContract.Title,
                 ResumeId = timeStampContract.ResumeId,
@@ -254,7 +257,8 @@ namespace Mappers
             return timeStampContracts.ConvertAll(x => new TimeStamp
             {
                 Id = x.Id,
-                Date = x.Date,
+                FromDate = x.FromDate,
+                ToDate = x.ToDate,
                 Text = x.Text,
                 Title = x.Title,
                 ResumeId = x.ResumeId,
