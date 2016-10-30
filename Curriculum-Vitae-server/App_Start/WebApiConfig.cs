@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Net.Http.Headers;
 using System.Web.Http;
+using System.Web.Http.Cors;
 using Owin;
 
 namespace Curriculum_Vitae_server
@@ -12,6 +13,8 @@ namespace Curriculum_Vitae_server
         public static void Configure(IAppBuilder app)
         {
             var config = new HttpConfiguration();
+
+            config.EnableCors(new EnableCorsAttribute("*", "*", "GET, POST, OPTIONS, PUT, DELETE"));
 
             // Web API routes
             config.MapHttpAttributeRoutes();

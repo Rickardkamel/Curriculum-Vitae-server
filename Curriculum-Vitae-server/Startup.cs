@@ -8,7 +8,9 @@ namespace Curriculum_Vitae_server
     {
         public void Configuration(IAppBuilder app)
         {
+            
             WebApiConfig.Configure(app);
+            
         }
     }
 }
