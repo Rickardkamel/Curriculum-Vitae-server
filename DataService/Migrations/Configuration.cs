@@ -117,17 +117,22 @@ namespace DataService.Migrations
                 {
                     Id = 1,
                     Title = "Document Management",
-                    GitLink = "soonToBe",
+                    GitLink = "https://github.com/Rickardkamel/",
                     Text = "Web application for a customer during my employement at IT-Mastaren. " +
                            "The plan was to digitize their document creation and give them an easy way to manage their documents. "
                 },
                 new Project
                 {
                     Id = 2,
-                    Title = "Employee App"
+                    Title = "Employee App",
+                    GitLink = "https://github.com/Rickardkamel/Ionic-App",
+                    Text = "The company I did my internship at needed an application where they could report their absence, " +
+                           "see news from the company intranet and manage their account.The key here was to build the application as " +
+                           "dynamic as possible to later add more functionality. "
                 }
             };
 
+            projects.ForEach(x => context.Projects.Add(x));
             skills.ForEach(x => context.Skills.Add(x));
             resumeList.ForEach(x => context.Resumes.Add(x));
             context.About.Add(aboutMe);

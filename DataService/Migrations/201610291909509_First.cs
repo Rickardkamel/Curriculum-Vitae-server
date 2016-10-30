@@ -28,6 +28,7 @@ namespace DataService.Migrations
                         Id = c.Int(nullable: false, identity: true),
                         Title = c.String(),
                         Text = c.String(),
+                        GitLink = c.String(),
                     })
                 .PrimaryKey(t => t.Id);
             
@@ -48,7 +49,8 @@ namespace DataService.Migrations
                         Title = c.String(),
                         SubTitle = c.String(),
                         Text = c.String(),
-                        Date = c.DateTime(nullable: false),
+                        FromDate = c.DateTime(nullable: false),
+                        ToDate = c.DateTime(nullable: false),
                         ResumeId = c.Int(nullable: false),
                     })
                 .PrimaryKey(t => t.Id)
