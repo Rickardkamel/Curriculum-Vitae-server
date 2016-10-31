@@ -22,7 +22,7 @@ namespace BusinessLogic.Handlers
 
         public List<TimeStampContract> Get()
         {
-            return _uow.TimeStampRepository.GetAll().ToContracts();
+            return _uow.TimeStampRepository.GetAll().OrderBy(o => o.FromDate).ToList().ToContracts();
         }
 
         public TimeStampContract Get(int id)
