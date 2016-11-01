@@ -13,7 +13,7 @@ namespace DataService.Migrations
         
         string IMigrationMetadata.Id
         {
-            get { return "201610291909509_First"; }
+            get { return "201611012013546_First"; }
         }
         
         string IMigrationMetadata.Source
