@@ -22,7 +22,7 @@ namespace BusinessLogic.Handlers
 
         public List<SkillContract> Get()
         {
-            return _uow.SkillRepository.GetAll().ToContracts();
+            return _uow.SkillRepository.GetAll().OrderByDescending(o => o.Percentage).ToList().ToContracts();
         }
 
         public SkillContract Get(int id)

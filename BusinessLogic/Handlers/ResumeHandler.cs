@@ -22,7 +22,15 @@ namespace BusinessLogic.Handlers
 
         public IList<ResumeContract> Get()
         {
-            return _uow.ResumeRepository.GetAll().ToContracts();
+            var resumes = _uow.ResumeRepository.GetAll();
+
+            foreach (var resume in resumes)
+            {
+                var timeStamps = resume.TimeStamps.OrderByDescending(o => o.FromDate).ToList();
+                resume.TimeStamps = timeStamps;
+            }
+
+            return resumes.ToContracts();
         }
 
         public ResumeContract Get(int id)
