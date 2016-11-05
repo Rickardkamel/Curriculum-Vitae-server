@@ -78,6 +78,6 @@ namespace DataService.Migrations
             DropTable("dbo.Resumes");
             DropTable("dbo.Projects");
             DropTable("dbo.Abouts");
-        }
+        }   
     }
 }

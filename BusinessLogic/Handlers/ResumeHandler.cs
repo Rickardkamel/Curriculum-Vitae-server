@@ -30,7 +30,7 @@ namespace BusinessLogic.Handlers
                 resume.TimeStamps = timeStamps;
             }
 
-            return resumes.ToContracts();
+            return resumes.OrderByDescending(o => o.Section).ToList().ToContracts();
         }
 
         public ResumeContract Get(int id)
