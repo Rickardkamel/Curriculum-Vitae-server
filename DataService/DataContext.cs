@@ -15,11 +15,5 @@ namespace DataService
         public DbSet<Resume> Resumes { get; set; }
         public DbSet<TimeStamp> Timestamps { get; set; }
         public DbSet<Skill> Skills { get; set; }
-
-        protected override void OnModelCreating(DbModelBuilder modelBuilder)
-        {
-
-            base.OnModelCreating(modelBuilder);
-        }
     }
 }
