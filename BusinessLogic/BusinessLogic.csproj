@@ -45,6 +45,7 @@
   <ItemGroup>
     <Compile Include="Handlers\AboutHandler.cs" />
     <Compile Include="Handlers\ProjectHandler.cs" />
+    <Compile Include="Handlers\ReferenceHandler.cs" />
     <Compile Include="Handlers\ResumeHandler.cs" />
     <Compile Include="Handlers\SkillHandler.cs" />
     <Compile Include="Handlers\TimeStampHandler.cs" />
