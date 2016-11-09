@@ -15,5 +15,6 @@ namespace DataService
         public DbSet<Resume> Resumes { get; set; }
         public DbSet<TimeStamp> Timestamps { get; set; }
         public DbSet<Skill> Skills { get; set; }
+        public DbSet<Reference> References{ get; set; }
     }
 }
