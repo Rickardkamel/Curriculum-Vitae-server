@@ -69,6 +69,20 @@ namespace Mappers
                 SubTitle = timeStamp.SubTitle,
             };
         }
+
+        public static ReferenceContract ToContract(this Reference reference)
+        {
+            return new ReferenceContract
+            {
+                Id = reference.Id,
+                Company = reference.Company,
+                ImageUrl = reference.ImageUrl,
+                Name = reference.Name,
+                Occupation = reference.Occupation,
+                QuoteText = reference.QuoteText
+            };
+        }
+        
         #endregion
 
         #region List
@@ -134,6 +148,18 @@ namespace Mappers
             });
         }
 
+        public static List<ReferenceContract> ToContracts(this List<Reference> references)
+        {
+            return references.ConvertAll(x => new ReferenceContract
+            {
+                Id = x.Id,
+                Company = x.Company,
+                ImageUrl = x.ImageUrl,
+                Name = x.Name,
+                Occupation = x.Occupation,
+                QuoteText = x.QuoteText
+            });
+        }
 
         #endregion
 
@@ -202,6 +228,19 @@ namespace Mappers
             };
         }
 
+        public static Reference ToEntity(this ReferenceContract referenceContract)
+        {
+            return new Reference
+            {
+                Id = referenceContract.Id,
+                Company = referenceContract.Company,
+                ImageUrl = referenceContract.ImageUrl,
+                Name = referenceContract.Name,
+                Occupation = referenceContract.Occupation,
+                QuoteText = referenceContract.QuoteText
+            };
+        }
+
         #endregion
 
         #region List
@@ -267,6 +306,18 @@ namespace Mappers
             });
         }
 
+        public static List<Reference> ToEntities(this List<ReferenceContract> referenceContracts)
+        {
+            return referenceContracts.ConvertAll(x => new Reference
+            {
+                Id = x.Id,
+                Company = x.Company,
+                ImageUrl = x.ImageUrl,
+                Name = x.Name,
+                Occupation = x.Occupation,
+                QuoteText = x.QuoteText
+            });
+        }
 
         #endregion
 
