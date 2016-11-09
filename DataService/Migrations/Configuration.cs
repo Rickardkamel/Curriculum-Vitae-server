@@ -4,7 +4,6 @@ using Models;
 namespace DataService.Migrations
 {
     using System;
-    using System.Data.Entity;
     using System.Data.Entity.Migrations;
     using System.Linq;
 
@@ -24,8 +23,8 @@ namespace DataService.Migrations
                 BirthDate = new DateTime(1992, 01, 27).Date,
                 Adress = "Hagendalsvagen 20 A, 69230 Kumla, Sweden",
                 Nationality = "Swedish",
-                Phone = "(0046)707 762 303",
-                Email = "Rickardkamel@gmail.com"
+                Phone = "&#43;&#52;&#54;&#32;&#40;&#48;&#41;&#55;&#48;&#55;&#32;&#55;&#54;&#50;&#32;&#51;&#48;&#51;",
+                Email = "&#x52;&#x69;&#x63;&#x6B;&#x61;&#x72;&#x64;&#x6B;&#x61;&#x6D;&#x65;&#x6C;&#x40;&#x67;&#x6D;&#x61;&#x69;&#x6C;&#x2E;&#x63;&#x6F;&#x6D;"
             };
 
             IList<TimeStamp> timeStampList = new List<TimeStamp>
@@ -132,22 +131,54 @@ namespace DataService.Migrations
                 }
             };
 
+
+            var references = new List<Reference>
+            {
+                new Reference
+                {
+                    Id = 1,
+                    Company = "Ovo Energy",
+                    Name = "Marcus Carlsson",
+                    ImageUrl = "marcus.jpg",
+                    Occupation = "Fullstack Developer",
+                    QuoteText = "Rickard is one of the most hungry junior developers I have ever encounter and a must have for companies that is looking for a key player to not only build up but also learn from."
+                },
+                new Reference
+                {
+                    Id = 2,
+                    Company = "IT-Mastaren",
+                    Name = "Anders Persson",
+                    ImageUrl = "anders.jpg",
+                    Occupation = "Team Director",
+                    QuoteText = "Rickard, a committed and focused person, has great drive and exceptional will to develop."
+                },
+                new Reference
+                {
+                    Id = 3,
+                    Company = "IT-Mastaren",
+                    Name = "Michel Ishak",
+                    ImageUrl = "michel.jpg",
+                    Occupation = "Developer",
+                    QuoteText = "Working with Rickard is a delight, he takes responsibility, documents and above all makes sure that things gets done. " +
+                                "He is comfortable in different situations, both socially and in programming, easy to learn and takes criticism to become better. " +
+                                "Nice guy who spread laughter and his good humor to his surroundings"
+                },
+                new Reference
+                {
+                    Id = 4,
+                    Company = "EC Utbildning",
+                    Name = "Jonas Enander",
+                    ImageUrl = "jonas.jpg",
+                    Occupation = "School Director",
+                    QuoteText = "For referencequote, please contact: &#43;&#52;&#54;&#32;&#40;&#48;&#41;&#49;&#57;&#32;&#55;&#54;&#52;&#32;&#49;&#52;&#32;&#53;&#51;"
+                }
+            };
+
+            references.ForEach(x => context.References.Add(x));
             projects.ForEach(x => context.Projects.Add(x));
             skills.ForEach(x => context.Skills.Add(x));
             resumeList.ForEach(x => context.Resumes.Add(x));
             context.About.Add(aboutMe);
-            //  This method will be called after migrating to the latest version.
-
-            //  You can use the DbSet<T>.AddOrUpdate() helper extension method 
-            //  to avoid creating duplicate seed data. E.g.
-            //
-            //    context.People.AddOrUpdate(
-            //      p => p.FullName,
-            //      new Person { FullName = "Andrew Peters" },
-            //      new Person { FullName = "Brice Lambson" },
-            //      new Person { FullName = "Rowan Miller" }
-            //    );
-            //
         }
     }
 }

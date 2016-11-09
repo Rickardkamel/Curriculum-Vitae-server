@@ -33,6 +33,19 @@ namespace DataService.Migrations
                 .PrimaryKey(t => t.Id);
             
             CreateTable(
+                "dbo.References",
+                c => new
+                    {
+                        Id = c.Int(nullable: false, identity: true),
+                        Name = c.String(),
+                        Occupation = c.String(),
+                        Company = c.String(),
+                        ImageUrl = c.String(),
+                        QuoteText = c.String(),
+                    })
+                .PrimaryKey(t => t.Id);
+            
+            CreateTable(
                 "dbo.Resumes",
                 c => new
                     {
@@ -76,8 +89,9 @@ namespace DataService.Migrations
             DropTable("dbo.Skills");
             DropTable("dbo.TimeStamps");
             DropTable("dbo.Resumes");
+            DropTable("dbo.References");
             DropTable("dbo.Projects");
             DropTable("dbo.Abouts");
-        }   
+        }
     }
 }
