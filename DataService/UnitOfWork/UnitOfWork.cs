@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using DataService.Repository;
+﻿using DataService.Repository;
 using Models;
 
 namespace DataService.UnitOfWork
@@ -17,6 +12,7 @@ namespace DataService.UnitOfWork
         private GenericRepository<Resume> _resumeRepository;
         private GenericRepository<TimeStamp> _timeStampRepository;
         private GenericRepository<Project> _projectRepository;
+        private GenericRepository<Reference> _referenceRepository;
 
         public UnitOfWork(object db)
         {
@@ -32,5 +28,7 @@ namespace DataService.UnitOfWork
         public GenericRepository<TimeStamp> TimeStampRepository => _timeStampRepository ?? (_timeStampRepository = new GenericRepository<TimeStamp>(_db));
 
         public GenericRepository<Project> ProjectRepository => _projectRepository ?? (_projectRepository = new GenericRepository<Project>(_db));
+
+        public GenericRepository<Reference> ReferenceRepository => _referenceRepository ?? (_referenceRepository = new GenericRepository<Reference>(_db));
     }
 }
