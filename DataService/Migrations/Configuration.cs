@@ -23,8 +23,8 @@ namespace DataService.Migrations
                 BirthDate = new DateTime(1992, 01, 27).Date,
                 Adress = "Hagendalsvagen 20 A, 69230 Kumla, Sweden",
                 Nationality = "Swedish",
-                Phone = "&#43;&#52;&#54;&#32;&#40;&#48;&#41;&#55;&#48;&#55;&#32;&#55;&#54;&#50;&#32;&#51;&#48;&#51;",
-                Email = "&#x52;&#x69;&#x63;&#x6B;&#x61;&#x72;&#x64;&#x6B;&#x61;&#x6D;&#x65;&#x6C;&#x40;&#x67;&#x6D;&#x61;&#x69;&#x6C;&#x2E;&#x63;&#x6F;&#x6D;"
+                Phone = "+46 (0)707 762 303",
+                Email = "Rickardkamel@gmail.com"
             };
 
             IList<TimeStamp> timeStampList = new List<TimeStamp>
@@ -141,7 +141,7 @@ namespace DataService.Migrations
                     Name = "Marcus Carlsson",
                     ImageUrl = "marcus.jpg",
                     Occupation = "Fullstack Developer",
-                    QuoteText = "Rickard is one of the most hungry junior developers I have ever encounter and a must have for companies that is looking for a key player to not only build up but also learn from."
+                    QuoteText = "Rickard is one of the most hungry junior developers I have ever met. He is an absolute must-have for companies looking for a key player who can be shaped to fit any role the company needs, but also to learn from."
                 },
                 new Reference
                 {
@@ -170,7 +170,7 @@ namespace DataService.Migrations
                     Name = "Jonas Enander",
                     ImageUrl = "jonas.jpg",
                     Occupation = "School Director",
-                    QuoteText = "For referencequote, please contact: &#43;&#52;&#54;&#32;&#40;&#48;&#41;&#49;&#57;&#32;&#55;&#54;&#52;&#32;&#49;&#52;&#32;&#53;&#51;"
+                    QuoteText = "For a referral, please contact: +46 (0)19 764 14 53"
                 }
             };
 
