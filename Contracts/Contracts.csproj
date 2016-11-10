@@ -41,6 +41,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AboutContract.cs" />
+    <Compile Include="EmailContract.cs" />
     <Compile Include="ProjectContract.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ReferenceContract.cs" />
