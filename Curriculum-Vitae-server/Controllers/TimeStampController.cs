@@ -26,16 +26,16 @@ namespace Curriculum_Vitae_server.Controllers
             return timeStamp == null ? (IHttpActionResult)NotFound() : Ok(timeStamp);
         }
 
-        public IHttpActionResult Post(TimeStampContract timeStampContract)
-        {
-            _timeStampHandler.Post(timeStampContract);
-            return Ok();
-        }
+        //public IHttpActionResult Post(TimeStampContract timeStampContract)
+        //{
+        //    _timeStampHandler.Post(timeStampContract);
+        //    return Ok();
+        //}
 
-        public IHttpActionResult Delete(int id)
-        {
-            _timeStampHandler.Delete(id);
-            return Ok();
-        }
+        //public IHttpActionResult Delete(int id)
+        //{
+        //    _timeStampHandler.Delete(id);
+        //    return Ok();
+        //}
     }
 }

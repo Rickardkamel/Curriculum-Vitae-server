@@ -26,16 +26,16 @@ namespace Curriculum_Vitae_server.Controllers
             return skill == null ? (IHttpActionResult) NotFound() : Ok(skill);
         }
 
-        public IHttpActionResult Post(SkillContract skillContract)
-        {
-            _skillHandler.Post(skillContract);
-            return Ok();
-        }
+        //public IHttpActionResult Post(SkillContract skillContract)
+        //{
+        //    _skillHandler.Post(skillContract);
+        //    return Ok();
+        //}
 
-        public IHttpActionResult Delete(int id)
-        {
-            _skillHandler.Delete(id);
-            return Ok();
-        }
+        //public IHttpActionResult Delete(int id)
+        //{
+        //    _skillHandler.Delete(id);
+        //    return Ok();
+        //}
     }
 }

@@ -26,16 +26,16 @@ namespace Curriculum_Vitae_server.Controllers
             return resume == null ? (IHttpActionResult)NotFound() : Ok(resume);
         }
 
-        public IHttpActionResult Post(ResumeContract resumeContract)
-        {
-            _resumeHandler.Post(resumeContract);
-            return Ok();
-        }
+        //public IHttpActionResult Post(ResumeContract resumeContract)
+        //{
+        //    _resumeHandler.Post(resumeContract);
+        //    return Ok();
+        //}
 
-        public IHttpActionResult Delete(int id)
-        {
-            _resumeHandler.Delete(id);
-            return Ok();
-        }
+        //public IHttpActionResult Delete(int id)
+        //{
+        //    _resumeHandler.Delete(id);
+        //    return Ok();
+        //}
     }
 }

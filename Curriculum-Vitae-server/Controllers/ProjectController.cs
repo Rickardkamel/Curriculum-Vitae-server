@@ -26,16 +26,16 @@ namespace Curriculum_Vitae_server.Controllers
             return project == null ? (IHttpActionResult)NotFound() : Ok(project);
         }
 
-        public IHttpActionResult Post(ProjectContract projectContract)
-        {
-            _projectHandler.Post(projectContract);
-            return Ok();
-        }
+        //public IHttpActionResult Post(ProjectContract projectContract)
+        //{
+        //    _projectHandler.Post(projectContract);
+        //    return Ok();
+        //}
 
-        public IHttpActionResult Delete(int id)
-        {
-            _projectHandler.Delete(id);
-            return Ok();
-        }
+        //public IHttpActionResult Delete(int id)
+        //{
+        //    _projectHandler.Delete(id);
+        //    return Ok();
+        //}
     }
 }
