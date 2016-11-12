@@ -31,13 +31,15 @@ namespace BusinessLogic.Handlers
                     Port = 587,
                     DeliveryMethod = SmtpDeliveryMethod.Network,
                     UseDefaultCredentials = false,
-                    Credentials = new NetworkCredential("rickardkamelautomail@gmail.com", "password"),
+                    Credentials = new NetworkCredential("rickardkamelautomail@gmail.com", "testPW123"),
                     Host = "smtp.gmail.com",
                     EnableSsl = true,
                 };
                 mail.Subject = emailContract.Subject;
-
-                mail.Body = emailContract.Message + " - - - -  SENT FROM: " + emailContract.From;
+                mail.Sender = new MailAddress(emailContract.Email);
+                mail.Body = emailContract.Name + " contacted you through your website \n\n\n" + 
+                    "Subject: " + emailContract.Subject + " \n" +  
+                    "Message: " + emailContract.Message + "\n\n\nSenders email: " + emailContract.Email;
                 client.Send(mail);
 
                 return true;

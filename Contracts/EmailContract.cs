@@ -10,6 +10,7 @@ namespace Contracts
     {
         public string Subject { get; set; }
         public string Message { get; set; }
-        public string From { get; set; }
+        public string Email { get; set; }
+        public string Name { get; set; }
     }
 }
