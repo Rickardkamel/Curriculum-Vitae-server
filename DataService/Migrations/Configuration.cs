@@ -94,20 +94,20 @@ namespace DataService.Migrations
 
             var skills = new List<Skill>
             {
-                new Skill {Id = 1, Name = "C#", Percentage = 75},
-                new Skill {Id = 2, Name = "MVC", Percentage = 58},
-                new Skill {Id = 3, Name = "Web Api", Percentage = 70},
-                new Skill {Id = 4, Name = "TypeScript", Percentage = 65},
-                new Skill {Id = 5, Name = "JavaScript", Percentage = 72},
-                new Skill {Id = 6, Name = "AngularJS", Percentage = 65},
-                new Skill {Id = 7, Name = "Angular2", Percentage = 78},
-                new Skill {Id = 8, Name = "SQL", Percentage = 65},
-                new Skill {Id = 9, Name = "Ionic", Percentage = 67},
+                new Skill {Id = 1, Name = "C#", Percentage = 85},
+                new Skill {Id = 11, Name = "Entity Framework", Percentage = 84},
+                new Skill {Id = 7, Name = "Angular2", Percentage = 77},
                 new Skill {Id = 10, Name = "HTML & CSS", Percentage = 75},
-                new Skill {Id = 11, Name = "Entity Framework", Percentage = 80},
-                new Skill {Id = 12, Name = "Azure", Percentage = 35},
-                new Skill {Id = 13, Name = "Active Directory", Percentage = 30},
-                new Skill {Id = 14, Name = "Electron", Percentage = 25},
+                new Skill {Id = 3, Name = "Web Api", Percentage = 72},
+                new Skill {Id = 5, Name = "JavaScript", Percentage = 70},
+                new Skill {Id = 9, Name = "Ionic", Percentage = 68},
+                new Skill {Id = 4, Name = "TypeScript", Percentage = 66},
+                new Skill {Id = 8, Name = "SQL", Percentage = 65},
+                new Skill {Id = 6, Name = "AngularJS", Percentage = 63},
+                new Skill {Id = 2, Name = "MVC", Percentage = 58},
+                new Skill {Id = 12, Name = "Azure", Percentage = 45},
+                new Skill {Id = 13, Name = "Active Directory", Percentage = 35},
+                new Skill {Id = 14, Name = "Electron", Percentage = 30},
             };
 
             var projects = new List<Project>
@@ -116,7 +116,7 @@ namespace DataService.Migrations
                 {
                     Id = 1,
                     Title = "Document Management",
-                    GitLink = "https://github.com/Rickardkamel/",
+                    GitLink = "https://github.com/Rickardkamel/DocumentHandler-client",
                     Text = "Web application for a customer during my employement at IT-Mastaren. " +
                            "The plan was to digitize their document creation and give them an easy way to manage their documents. "
                 },

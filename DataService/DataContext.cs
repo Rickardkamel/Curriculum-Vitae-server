@@ -5,7 +5,7 @@ namespace DataService
 {
     public class DataContext : DbContext
     {
-        public DataContext() : base("RickardKamel")
+        public DataContext() : base("Rickardkamel")
         {
 
         }
