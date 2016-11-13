@@ -1,4 +1,6 @@
-﻿using Curriculum_Vitae_server;
+﻿using System.Web.Http;
+using System.Web.Routing;
+using Curriculum_Vitae_server;
 using Microsoft.Owin;
 using Owin;
 [assembly: OwinStartup(typeof(Startup))]
@@ -8,9 +10,7 @@ namespace Curriculum_Vitae_server
     {
         public void Configuration(IAppBuilder app)
         {
-            
-            WebApiConfig.Configure(app);
-            
+            //WebApiConfig.Configure(app);
         }
     }
 }
