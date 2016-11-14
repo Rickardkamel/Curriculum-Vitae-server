@@ -106,8 +106,6 @@ namespace DataService.Migrations
                 new Skill {Id = 6, Name = "AngularJS", Percentage = 63},
                 new Skill {Id = 2, Name = "MVC", Percentage = 58},
                 new Skill {Id = 12, Name = "Azure", Percentage = 45},
-                new Skill {Id = 13, Name = "Active Directory", Percentage = 35},
-                new Skill {Id = 14, Name = "Electron", Percentage = 30},
             };
 
             var projects = new List<Project>
