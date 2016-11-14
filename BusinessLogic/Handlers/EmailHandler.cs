@@ -31,7 +31,7 @@ namespace BusinessLogic.Handlers
                     Port = 587,
                     DeliveryMethod = SmtpDeliveryMethod.Network,
                     UseDefaultCredentials = false,
-                    Credentials = new NetworkCredential("rickardkamelautomail@gmail.com", "testPW123"),
+                    Credentials = new NetworkCredential("rickardkamelautomail@gmail.com", "NoPasswordForYou ;)"),
                     Host = "smtp.gmail.com",
                     EnableSsl = true,
                 };
